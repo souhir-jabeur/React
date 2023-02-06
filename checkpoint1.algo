@@ -1,0 +1,52 @@
+
+ALGORITHM Task_1
+VAR
+    nbrM,nbrV,i : INTEGER;
+    Sentences:String[];
+BEGIN
+    nbrM:=0;
+    nbrV:=0;
+    i:=0;
+    write("this is Souhir .");
+    Read(Sentences);
+    REPEAT
+    if (Sentences[i]=" ") then
+    nbrM:=nbrM+1;
+    end-if
+    if(Sentences[i] in ["a","e","u","i","o","y"]) then
+    nbrV:=nbrV+1;
+    end-if
+    i:=i+1;
+    until(Sentences[i]=".")
+    write(nbrM)//nombre Mot
+    write(nbrV)//nombre voyelles
+
+    
+END
+
+ALGORITHM Task_2
+VAR
+   sum,i,j: INTEGER;
+    Element1,Element2:array-of INTEGER[];
+BEGIN
+    i:=0;
+    j:=0;
+    sum:=0;
+    Element1:={1,8,5,6};
+    Element2:={5,7,6,3};
+    Read(Element1);
+    Read(Element2);
+    while(Element1[i]=Element2[j] or )
+
+
+    for i from 0 to Element1.lenght Step 1 do
+       for j from 0 to Element2.lenght Step 1 do
+        if(Element1[i]<>Element2[j] and i<>j)
+        read(Element1[i]);
+        end-if
+        sum:=sum+Element1[i];
+    end-for
+    end-for
+    write(sum);
+    
+END
