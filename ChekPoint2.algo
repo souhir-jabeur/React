@@ -1,0 +1,43 @@
+// task 1;
+Function Dot_Product(v1 array_of float[],v2 array_of float[]):float
+VAR
+ps:float;
+i,N : INTEGER;
+BEGIN
+ps:=0.0;
+i:=0;
+N:=v1.lenght
+for i from 0 to N-1 Step 1 do
+ps:=ps+v1[i]*v2[i];
+end-for
+return ps;
+end
+
+ALGORITHM Produit_scalaire
+VAR
+m,n:INTEGER;
+Vec:array_of float[n][m];
+vec1:array_of float[m];
+vec2:array_of float[m];
+pss:float;
+BEGIN
+pss:=0.0;
+for i from 0 to n-1 step 1 do
+
+    for j from 0 to m-1 step 1 do
+    vec1[j]:=vec[i][j];
+    vec2[j]:=vec[i+1][j];
+        pss:=Dot_Product(vec1[j],vec2[j]);
+        Read(pss);
+        if(pss=0.0) then
+        write("les deux vecteurs sont orthogonaux");
+        else
+            write("les deux vecteurs ne sont pas orthogonaux");
+        end if
+end for
+    end for
+
+END    
+
+
+
